@@ -1,63 +1,22 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>TMTB Trail Status</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="mobiletrailstyle.css">
-		<script type="text/javascript">
-		<!--
-			function toggle_visibility(it,cont) {
-				var inforow = document.getElementById(it);
-				if(inforow.style.display == '')
-					inforow.style.display = 'none';
-				else
-					inforow.style.display = '';
-
-				var contarrow = document.getElementById(cont);
-				if(contarrow.style.transform == 'rotate(90deg)')
-					contarrow.style.transform = 'rotate(0deg)';
-				else
-					contarrow.style.transform = 'rotate(90deg)';
-			}
-		//-->
-		</script>
-	</head>
-	<body>
-<h1>TriangleMTB</h1>
-<table align="center">
-<tr><td class="header" nowrap>Trail</td><td class="header" nowrap>Status</td><td class="header" nowrap>Updated</td></tr>
-<tr><td class="trail" nowrap><a href="beaverdam.php" title="Beaver Dam 919-676-1027">Beaver Dam</a></td><td onclick="toggle_visibility('itbeaverdam','contbeaverdam');" class="info" title="updated by: FALA" nowrap>OPEN <div id="contbeaverdam" style="display:inline-block;"><img src="rightarrow40.png" height="13" width="13"></div></td><td class="trail" nowrap>04/02 7:35 am</td></tr>
-<tr id="itbeaverdam" style="display:none;"><td class="trail" colspan="3">Park closes at 7:30pm.</td></tr>
-<tr><td class="trail" nowrap><a href="briarchapel.php" title="&nbsp;">Briar Chapel</a></td><td  class="open" title="updated by: tjstankus" nowrap>OPEN</td><td class="trail" nowrap>04/01 5:44 pm</td></tr>
-<tr><td class="trail" nowrap><a href="briarchapel.php" title="&nbsp;">      └ Skills Area</a></td><td  class="open" title="updated by: tjstankus" nowrap>OPEN</td><td class="trail" nowrap>04/01 5:44 pm</td></tr>
-<tr><td class="trail" nowrap><a href="briarchapel.php" title="&nbsp;">      └ Herndon Loop</a></td><td  class="open" title="updated by: tjstankus" nowrap>OPEN</td><td class="trail" nowrap>04/01 5:44 pm</td></tr>
-<tr><td class="trail" nowrap><a href="brumley.php" title="&nbsp;">Brumley Forest</a></td><td  class="open" title="updated by: David H" nowrap>OPEN</td><td class="trail" nowrap>04/03 1:13 pm</td></tr>
-<tr><td class="trail" nowrap><a href="unc.php" title="&nbsp;">Carolina OEC</a></td><td  class="open" title="updated by: David Rogers" nowrap>OPEN</td><td class="trail" nowrap>04/02 3:12 pm</td></tr>
-<tr><td class="trail" nowrap><a href="chapelhill.php" title="&nbsp;">CNF (airport)</a></td><td  class="open" title="updated by: mancher" nowrap>OPEN</td><td class="trail" nowrap>04/02 6:25 am</td></tr>
-<tr><td class="trail" nowrap><a href="chapelhill.php" title="&nbsp;">CNF (school)</a></td><td  class="open" title="updated by: mancher" nowrap>OPEN</td><td class="trail" nowrap>04/02 6:25 am</td></tr>
-<tr><td class="trail" nowrap><a href="crabtree.php" title="Lake Crabtree Park 919-460-3390">Crabtree</a></td><td onclick="toggle_visibility('itcrabtree','contcrabtree');" class="info" title="updated by: drewc" nowrap>OPEN <div id="contcrabtree" style="display:inline-block;"><img src="rightarrow40.png" height="13" width="13"></div></td><td class="trail" nowrap>04/03 10:22 am</td></tr>
-<tr id="itcrabtree" style="display:none;"><td class="trail" colspan="3">Park is now closing @ 8:00 pm</td></tr>
-<tr><td class="trail" nowrap><a href="forest_ridge.php" title="&nbsp;">Forest Ridge</a></td><td onclick="toggle_visibility('itforestridge','contforestridge');" class="info" title="updated by: ForestRidgeManager" nowrap>OPEN <div id="contforestridge" style="display:inline-block;"><img src="rightarrow40.png" height="13" width="13"></div></td><td class="trail" nowrap>04/03 7:45 am</td></tr>
-<tr id="itforestridge" style="display:none;"><td class="trail" colspan="3">Park opens at 7:00am.  Park closes at 8:00pm.</td></tr>
-<tr><td class="trail" nowrap><a href="green_hills.php" title="&nbsp;">Green Hills</a></td><td  class="open" title="updated by: efpw" nowrap>OPEN</td><td class="trail" nowrap>04/01 9:07 pm</td></tr>
-<tr><td class="trail" nowrap><a href="harris.php" title="Harris Park 919-387-4342">Harris</a></td><td onclick="toggle_visibility('itharris','contharris');" class="closed" title="updated by: HarrisLake" nowrap>CLOSED <div id="contharris" style="display:inline-block;"><img src="rightarrow40.png" height="13" width="13"></div></td><td class="trail" nowrap>04/03 12:51 pm</td></tr>
-<tr id="itharris" style="display:none;"><td class="trail" colspan="3">Park closes at 8 p.m.</td></tr>
-<tr><td class="trail" nowrap><a href="legend.php" title="&nbsp;">Legend (Lower)</a></td><td onclick="toggle_visibility('itlegendlower','contlegendlower');" class="closed" title="updated by: BIVENATOR" nowrap>CLOSED <div id="contlegendlower" style="display:inline-block;"><img src="rightarrow40.png" height="13" width="13"></div></td><td class="trail" nowrap>01/25 6:57 am</td></tr>
-<tr id="itlegendlower" style="display:none;"><td class="trail" colspan="3">Per Town (6/11)</td></tr>
-<tr><td class="trail" nowrap><a href="legend.php" title="&nbsp;">Legend (Upper)</a></td><td onclick="toggle_visibility('itlegendupper','contlegendupper');" class="info" title="updated by: BIVENATOR" nowrap>OPEN <div id="contlegendupper" style="display:inline-block;"><img src="rightarrow40.png" height="13" width="13"></div></td><td class="trail" nowrap>04/02 10:43 am</td></tr>
-<tr id="itlegendupper" style="display:none;"><td class="trail" colspan="3">May now park at Legend Park. Lowers remain closed.</td></tr>
-<tr><td class="trail" nowrap><a href="littleriver.php" title="Little River 919-732-5505">Little River</a></td><td onclick="toggle_visibility('itlittleriver','contlittleriver');" class="info" title="updated by: DangerChan" nowrap>OPEN <div id="contlittleriver" style="display:inline-block;"><img src="rightarrow40.png" height="13" width="13"></div></td><td class="trail" nowrap>04/03 10:42 am</td></tr>
-<tr id="itlittleriver" style="display:none;"><td class="trail" colspan="3">Park gate closes at 7pm. Skills area closed.</td></tr>
-<tr><td class="trail" nowrap><a href="newlight.php" title="&nbsp;">New Light</a></td><td onclick="toggle_visibility('itnewlight','contnewlight');" class="closed" title="updated by: admin" nowrap>CLOSED <div id="contnewlight" style="display:inline-block;"><img src="rightarrow40.png" height="13" width="13"></div></td><td class="trail" nowrap>03/29 5:00 am</td></tr>
-<tr id="itnewlight" style="display:none;"><td class="trail" colspan="3">Open only on Sundays Sep 1 through May 14.</td></tr>
-<tr><td class="trail" nowrap><a href="othertrails.php#rtp" title="&nbsp;">RTP Trails</a></td><td onclick="toggle_visibility('itrtp','contrtp');" class="info" title="updated by: alex" nowrap>OPEN <div id="contrtp" style="display:inline-block;"><img src="rightarrow40.png" height="13" width="13"></div></td><td class="trail" nowrap>04/01 9:25 pm</td></tr>
-<tr id="itrtp" style="display:none;"><td class="trail" colspan="3">Be aware of construction traffic on Louis Stephens</td></tr>
-<tr><td class="trail" nowrap><a href="sanlee.php" title="&nbsp;">San Lee Gravity Park</a></td><td onclick="toggle_visibility('itsanleegp','contsanleegp');" class="info" title="updated by: Vagabond02" nowrap>OPEN <div id="contsanleegp" style="display:inline-block;"><img src="rightarrow40.png" height="13" width="13"></div></td><td class="trail" nowrap>03/31 8:01 am</td></tr>
-<tr id="itsanleegp" style="display:none;"><td class="trail" colspan="3">Ricochet Trail has a tree down</td></tr>
-<tr><td class="trail" nowrap><a href="sanlee.php" title="&nbsp;">San Lee Singletrack</a></td><td  class="open" title="updated by: Vagabond02" nowrap>OPEN</td><td class="trail" nowrap>03/31 8:01 am</td></tr>
-<tr><td class="trail" nowrap><a href="othertrails.php#wendellfalls" title="&nbsp;">Wendell Falls</a></td><td  class="open" title="updated by: Flip" nowrap>OPEN</td><td class="trail" nowrap>04/01 4:51 pm</td></tr>
-<tr><td class="trail" nowrap><a href="williamson_preserve.php" title="&nbsp;">Williamson Preserve</a></td><td  class="open" title="updated by: BIVENATOR" nowrap>OPEN</td><td class="trail" nowrap>04/03 7:43 am</td></tr>
-<tr><td class="footer" colspan="3">For additional information such as park closing times or other notifications about trail status, please view the full trail status on <a href="index.php">TriangleMTB</a>'s home page.</td></tr>
-</table>
-	</body>
-</html>
+Beaver Dam
+Briar Chapel
+└ Skills Area
+└ Herndon Loop
+Brumley Forest
+Carolina OEC
+CNF (airport)
+CNF (school)
+Crabtree
+Forest Ridge
+Green Hills
+Harris
+Legend (Lower)
+Legend (Upper)
+Little River
+New Light
+RTP Trails
+San Lee Gravity Park
+San Lee Singletrack
+Wendell Falls
+Williamson Preserve
+TriangleMTB
